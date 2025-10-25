@@ -91,12 +91,12 @@
 
     .text-red-jpr,
     a.link-red-jpr {
-      color: #a22c16
+      color: #9f6a08
     }
 
     .text-yellow-jpr,
     a.link-yellow-jpr {
-      color: #f1a71b
+      color: #1ba3f1
     }
   </style>
 
@@ -110,13 +110,17 @@
     .hero-section {
       position: relative;
       width: 100%;
-      height: 50vh;
+      height: 100vh;
       overflow: hidden;
 
       /* Pusatkan konten */
       display: flex;
       align-items: center;
       justify-content: center;
+      
+
+      
+
     }
 
     /* === VIDEO COVER STYLE === */
@@ -143,20 +147,26 @@
     /* === Konten di atas video === */
     .hero-content {
       position: relative;
-      z-index: 2;
-      padding: 0 20px;
-      text-align: center;
+      z-index: 5;
+      padding: 0 0;
+      margin-top: 20%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 20%;
+    
     }
 
     .hero-content h1 {
-      font-size: 3rem;
-      letter-spacing: 1px;
+      font-size: 4rem;
+      letter-spacing: 3px;
     }
 
     .hero-content p {
       font-size: 1.25rem;
       color: #fff;
     }
+
+    
 
     /* Overlay gelap agar teks lebih jelas */
     .hero-section::after {
@@ -169,6 +179,8 @@
       background: rgba(0, 0, 0, 0.35);
       z-index: 1;
     }
+
+    
  
   </style>
 
@@ -184,10 +196,10 @@
     </div>
 
     <!-- Konten di atas video -->
-    <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center text-white">
+    <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center text-white  ">
 
-      <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center">
-        <img src="./public/images/Depapre/New folder/logo kab jpr.png" width="200" alt="Logo Kota Jayapura">
+      <div class="d-flex flex-wrap gap-1 justify-content-center align-items-center">
+        <img src="./public/images/Depapre/New folder/logo kab jpr.png" width="300"  alt="Logo Kota Jayapura">
         <div class="text-start d-flex flex-column justify-content-center">
           <h3 class="text-light"></h3>
           <h1 class="text-light fw-bold">Distrik Depapre.</h1>
@@ -195,7 +207,7 @@
           </p>
           <p class="opacity-50">www.depapre.go.id</p>
         </div>
-        <img src="./public/images/Depapre/New folder/ketuawakil.png" alt="walikota" width="350">
+        <img src="./public/images/Depapre/New folder/ketuawakil.png" alt="walikota" width="500" >
         
         
       </div>
@@ -215,11 +227,11 @@
 
 
 
-  <header id="header" class="header d-flex align-items-center ">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center  ">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between ">
 
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu ">
         <ul>
           <li><a href="#beranda" class="active">Beranda</a></li>
 
@@ -283,7 +295,7 @@
 
     
     <!-- About Section -->
-    <section id="about" class="abo            ut section">
+    <section id="about" class="about section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -309,7 +321,7 @@
 
             <div class="row border-bottom mb-5">
               <div class="col">
-                <h5 class="display-5 fw-bold text-dark">Pengumuman</h5>
+                <h5 class="display-4 fw-bold text-red-jpr">Pengumuman</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tenetur! Officia quidem molestiae sint
                   distinctio?</p>
               </div>
@@ -396,10 +408,10 @@
         <div class="row">
 
           <div class="col-xl-2">
-            <h5 class="text-yellow-jpr display-6"> <span class="fw-bold">Berita</span> Terkini</h5>
+            <h5 class="text-red-jpr display-4"> <span class="fw-bold">Berita</span> Terkini</h5>
             </div>
           <div class="col-lg-10 d-flex align-items-center">
-            <p class="text-secondary" style="font-size: 100%;">Temukan beragam berita dan informasi terkini seputar
+            <p class="text-secondary fs-4" style="font-size: 100%;">Temukan beragam berita dan informasi terkini seputar
               kegiatan, kebijakan, serta perkembangan di wilayah Kota Jayapura. Setiap informasi disajikan untuk
               memberikan pemahaman yang lebih luas kepada masyarakat mengenai berbagai program dan inovasi daerah.
               Melalui publikasi ini, diharapkan masyarakat dapat berpartisipasi aktif dalam mendukung pembangunan Kota
@@ -654,9 +666,9 @@
       </div>
       <!-- item and -->
 
-      <div class="d-grid gap-2 col-8 col-md-4 col-sm-6 mx-auto shadow mt-5 mb-5 text-bg-light rounded-5">
+      <div class="d-grid gap-2 col-8 col-md-3 col-sm-6 mx-auto shadow mt-5 mb-5 text-bg-light rounded-5 p-2">
         <!-- Button lihat lebih banyak-->
-       <a href="#" class=" btn text-yellow-jpr ">  Tampilkan Lebih Banyak</a>
+       <a href="#" class=" btn text-yellow-jpr fs-3 ">  Tampilkan Lebih Banyak</a>
 
 
       </div>
@@ -673,9 +685,9 @@
 
           <div class="col-xl-5 position-relative" data-aos="fade-up" data-aos-delay="200">
           
-            <h2 class="display-3 text-red-jpr fw-bold text-center">Statistik <br><span class=" ">DATA</span></h2>
-            <div class="bg-secondary text-secondary w-25 position-absolute top-50 start-50 translate-middle mt-1 mb-2 opacity-50" style=" height: 3px; "></div>
-            <p class="about-description text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident sequi odit minus animi. Et iste laborum doloremque ullam, optio soluta provident numquam sunt consequatur!</p>
+            <h2 class="display-3 text-red-jpr fw-bold text-center">Statistik <br><span class="border-bottom border-4 mb-5 border-secondary">DATA</span></h2>
+            
+            <p class="about-description text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident sequi odit minus animi. Et iste laborum doloremque ullam, optio soluta provident numquam sunt consequatur!</p>
 
             <div class="info-wrapper">
               <div class="row gy-4">
@@ -719,7 +731,7 @@
 
 
         <div class="col-lg-4 col-md-3 footer-links ">
-          <h4 class="fw-bold text-uppercase">Profil Distrik</h4>
+          <h4 class="fw-bold text-uppercase text-red-jpr">Profil Distrik</h4>
           <ul class="">
             <li><a href="#">Sejarah Distrik</a></li>
             <li><a href="#">Visi & Misi</a></li>
@@ -731,7 +743,7 @@
         </div>
 
         <div class="col-lg-4 col-md-3 footer-links">
-          <h4 class="fw-bold text-uppercase">Media Sosial </h4>
+          <h4 class="fw-bold text-uppercase text-red-jpr">Media Sosial </h4>
           <ul>
             <li><a href="#" class="fs-6"><i class="bi bi-instagram text-danger-emphasis fs-6 "></i> Instagram</a></li>
             <li><a href="#" class="fs-6"><i class="bi bi-tiktok text-dark fs-6"></i> Tiktok</a></li>
