@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Distrik Depapre</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="public/images/profil/logo-kota-jayapura.png" rel="icon">
+  <link href="public/images/profil/logo-kota-jayapura.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .stat-item {
+      transition: all 0.3s ease;
+    }
+
+    .stat-item:hover {
+      transform: translateY(-8px);
+      /* moves up on hover */
+    }
+
+    a.link-light:hover {
+      color: #fff;
+    }
+  </style>
+
+  <!-- jpr styles -->
+  <style>
+    /* jpr background colors */
+    .bg-dark-jpr {
+      background-color: #1b211d
+    }
+
+    .bg-light-jpr {
+      background-color: #f1debf
+    }
+
+    .bg-green-jpr {
+      background-color: #448b36
+    }
+
+    .bg-red-jpr {
+      background-color: #a22c16
+    }
+
+    .bg-yellow-jpr {
+      background-color: #f1a71b
+    }
+
+
+    /* jpr text colors */
+    .text-dark-jpr,
+    a.link-dark-jpr {
+      color: #1b211d
+    }
+
+    .text-light-jpr,
+    a.link-light-jpr {
+      color: #f1debf
+    }
+
+    .text-green-jpr,
+    a.link-green-jpr {
+      color: #448b36
+    }
+
+    .text-red-jpr,
+    a.link-red-jpr {
+      color: #a22c16
+    }
+
+    .text-yellow-jpr,
+    a.link-yellow-jpr {
+      color: #f1a71b
+    }
+  </style>
+
+
+</head>
+
+<body class="index-page">
+
+
+  <style>
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 50vh;
+      overflow: hidden;
+
+      /* Pusatkan konten */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* === VIDEO COVER STYLE === */
+    .video-cover {
+      position:absolute;
+      top: 0;
+      left: 0;
+      bottom: 100px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .video-cover video {
+      width: 100%;
+      height: 100%;
+  
+  
+      object-fit: cover;
+      /* membuat video seperti background-size: cover */
+    }
+
+    /* === Konten di atas video === */
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      color: #fff;
+    }
+
+    /* Overlay gelap agar teks lebih jelas */
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.35);
+      z-index: 1;
+    }
+ 
+  </style>
+
+  <!-- ======= Hero Section dengan Video Lokal ======= -->
+  <section id="beranda" class="hero-section position-relative">
+
+    <!-- Background Video Lokal -->
+    <div class="video-cover ">
+      <video autoplay muted loop playsinline>
+        <source src="./public/video/backgroun depapre.mp4" type="video/mp4" >
+        Browser Anda tidak mendukung video HTML5.
+      </video>
+    </div>
+
+    <!-- Konten di atas video -->
+    <div class="hero-content d-flex flex-column justify-content-center align-items-center text-center text-white">
+
+      <div class="d-flex flex-wrap gap-4 justify-content-center align-items-center">
+        <img src="./public/images/Depapre/New folder/logo kab jpr.png" width="200" alt="Logo Kota Jayapura">
+        <div class="text-start d-flex flex-column justify-content-center">
+          <h3 class="text-light"></h3>
+          <h1 class="text-light fw-bold">Distrik Depapre.</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, <br>Lorem ipsum dolor sit amet. ".
+          </p>
+          <p class="opacity-50">www.depapre.go.id</p>
+        </div>
+        <img src="./public/images/Depapre/New folder/ketuawakil.png" alt="walikota" width="350">
+        
+        
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+  </section>
+
+
+
+
+
+
+  <header id="header" class="header d-flex align-items-center ">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#beranda" class="active">Beranda</a></li>
+
+          <li class="dropdown"><a href="#"><span>Profil Distrik</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="sejarah-kota.html">Sejarah Distrik</a></li>
+              <li><a href="visi-misi.html">Visi & Misi</a></li>
+              <li><a href="tupoksi.html">Tupoksi</a></li>
+              <li><a href="struktur.html">Struktur Organisasi</a></li>
+              <li><a href="petawilaya.html">Peta Wilayah</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#beritapengumuman" class="">Berita & Pengumuman</a></li>
+
+          <li class="dropdown"><a href="#"><span>Pelayanan Publik</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Layanan Administrasi</a></li>
+              <li><a href="#">Formulir Online</a></li>
+              <li><a href="#">jadwal layanan</a></li>
+              <li><a href="#">Panduan Prosedur</a></li>
+              <li><a href="#">Desa & Kampung</a></li>
+            </ul>
+          </li>
+
+          
+          <li class="dropdown"><a href="#"><span>Data & Statistik</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Profil Demografi</a></li>
+              <li><a href="#">Ekonomi & dan Industri</a></li>
+              <li><a href="#">Pendidikan & Kesehatan</a></li>
+              <li class="dropdown"><a href="#"><span>Infrastruktur</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Baru</a></li>
+                  <li><a href="#">Lama</a></li>
+                  
+                </ul>
+              </li>
+              
+              <li><a href="#">Laporan Tahunan</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#kontak">Program & Kegiatan</a></li>
+          <li><a href="#kontak">Transparansi & Laporan</a></li>
+          <li><a href="#kontak">Kontak & Layanan Online</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    
+    <!-- About Section -->
+    <section id="about" class="abo            ut section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-between py-5">
+
+          <div class="col-xl-3" data-aos="fade-up" data-aos-delay="200">
+
+
+
+
+            <div class="card text-bg-dark border-0 stat-item">
+              <a href="sambutan-walikota.html">
+                <img src="./public/images/Depapre/banner/infografis.png" alt="" class="w-100">
+              </a>
+            </div>
+
+
+
+
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="row border-bottom mb-5">
+              <div class="col">
+                <h5 class="display-5 fw-bold text-dark">Pengumuman</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tenetur! Officia quidem molestiae sint
+                  distinctio?</p>
+              </div>
+            </div>
+
+            <div class="row">
+
+
+              <div class="col-12">
+
+
+
+                <!-- BERITA 1 -->
+                <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 900px;">
+                  <div class="card-body" style="text-align: justify;">
+                    <h2 class="h5 fw-bold">Festival Bahari Tanah Merah</h2>
+                    <p class="card-text">
+                      Distrik Depapre akan menggelar Festival Bahari pada akhir pekan ini.
+                      Warga dapat menikmati pertunjukan tarian, musik lokal, dan bazar kuliner.
+                      Acara ini bertujuan memperkenalkan kekayaan budaya kepada wisatawan dan generasi muda.
+                    </p>
+                    <a href="#" class="text-decoration-none link-yellow-jpr">Baca Selengkapnya...</a>
+                  </div>
+                </div>
+
+
+
+                <!-- BERITA 1 -->
+                <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 900px;">
+                  <div class="card-body" style="text-align: justify;">
+                    <h2 class="h5 fw-bold">Penduduk Depapre</h2>
+                    <p class="card-text">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ad ea ipsam nobis veniam voluptatem rem praesentium voluptate laudantium sint non illo consequuntur excepturi reprehenderit in placeat perspiciatis rerum qui ullam architecto, nam id. Voluptas..
+                    </p>
+                    <a href="sejarah-kota.html" class="text-decoration-none link-yellow-jpr">Baca Selengkapnya...</a>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3" data-aos="fade-up" data-aos-delay="200">
+
+            <a href="#" class="mb-3 d-block stat-item">
+              <img src="./public/images/Depapre/baner 2/1.png"
+                class="img-fluid w-100 rounded shadow" style="object-fit: cover;" alt="Contoh banner kanan">
+            </a>
+
+            <a href="#" class="mb-3 d-block stat-item">
+              <img src="./public/images/Depapre/baner 2/2.png"
+                class="img-fluid w-100 rounded shadow" style="object-fit: cover;" alt="Contoh banner kanan">
+            </a>
+
+            <a href="#" class="mb-3 d-block stat-item">
+              <img src="./public/images/Depapre/baner 2/3.png"
+                class="img-fluid w-100 rounded shadow" style="object-fit: cover;" alt="Contoh banner kanan">
+            </a>
+
+            <a href="#" class="mb-3 d-block stat-item">
+              <img src="./public/images/Depapre/baner 2/4.png"
+                class="img-fluid w-100 rounded shadow" style="object-fit: cover;" alt="Contoh banner kanan">
+            </a>
+
+          </div>
+
+    </section><!-- /About Section -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Berita Terkini -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-xl-2">
+            <h5 class="text-yellow-jpr display-6"> <span class="fw-bold">Berita</span> Terkini</h5>
+            </div>
+          <div class="col-lg-10 d-flex align-items-center">
+            <p class="text-secondary" style="font-size: 100%;">Temukan beragam berita dan informasi terkini seputar
+              kegiatan, kebijakan, serta perkembangan di wilayah Kota Jayapura. Setiap informasi disajikan untuk
+              memberikan pemahaman yang lebih luas kepada masyarakat mengenai berbagai program dan inovasi daerah.
+              Melalui publikasi ini, diharapkan masyarakat dapat berpartisipasi aktif dalam mendukung pembangunan Kota
+              Jayapura yang berkelanjutan.</p>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+          
+            <div class="col">
+            <!-- BERITA 3 -->
+            <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 900px;">
+              <div class="row g-0 flex-column flex-md-row">
+                <!-- Gambar kiri -->
+                <div class="col-md-12">
+                  <img src="./public/images/Depapre/New folder/amai.png" class="img-top h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="card-body">
+                    <h2 class="h5 fw-bold">Pantai Amai | Distrik Depapre <br> <span class="fs-6 opacity-25">Kabupaten Jayapura</span> </h2>
+                    <p class="card-text">
+                      Pantai Amai adalah surga kecil yang menawarkan keindahan alami dan suasana yang tenang. Hamparan pasir putihnya yang lembut berpadu dengan birunya laut menciptakan pemandangan yang menenangkan mata dan hati. 
+                    </p>
+                    <a href="#" class="text-decoration-none fw-semibold link-yellow-jpr">Baca Selengkapnya...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col end -->
+
+          <div class="col">
+            <!-- BERITA 2 -->
+            <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 900px;">
+              <div class="row g-0 flex-column flex-md-row">
+                <!-- Gambar kiri -->
+                <div class="col-md-12">
+                  <img src="./public/images/Depapre/New folder/nusu.png" class="img-top h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="card-body">
+                    <h2 class="h5 fw-bold">Kampung | Desa Tablanusu | Distrik Depapre<br><span class="fs-6 opacity-25">Kabupaten Jayapura</span> </h2>
+                    <p class="card-text">
+                      Kampung Tablanusu adalah salah satu destinasi unik dan menawan di Papua yang menyimpan keindahan alam sekaligus keunikan budaya. Berbeda dari kampung lain, hampir seluruh halaman rumah di Tablanusu tertutup oleh batu kerikil hitam alami yang memberikan kesan khas dan eksotis. 
+                    </p>
+                    <a href="#" class="text-decoration-none fw-semibold link-yellow-jpr">Baca Selengkapnya...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col end -->
+
+          <div class="col ">
+            <!-- BERITA 3 -->
+            <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 900px;">
+              <div class="row g-0 flex-column flex-md-row">
+                <!-- Gambar kiri -->
+                <div class="col-md-12">
+                  <img src="./public/images/Depapre/asli/busana pria.jpg" class="img-fluid h-100 w-100"
+                    style="object-fit: cover; height:300px; " alt="Contoh gambar sampul berita">
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="card-body">
+                    <h2 class="h5 fw-bold">Festival Bahari Tanah Merah | Distrik Depapre<br><span class="fs-6 opacity-25">Kabupaten Jayapura</span> </h2>
+                    <p class="card-text">
+                      Festival Bahari Tanah Merah adalah perayaan tahunan yang memadukan keindahan budaya dan kekayaan laut daerah setempat. 
+                    </p>
+                    <a href="#" class="text-decoration-none fw-semibold link-yellow-jpr">Baca Selengkapnya...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col end -->
+
+          <div class="col">
+            <!-- BERITA 2 -->
+            <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 900px;">
+              <div class="row g-0 flex-column flex-md-row">
+                <!-- Gambar kiri -->
+                <div class="col-md-12">
+                  <img src="./public/images/Depapre/New folder/sagu ulat vektor.jpg" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="card-body">
+                      <h2 class="h5 fw-bold">Kuliner Khas Lokal | Distrik Depapre<br><span class="fs-6 opacity-25">Kabupaten Jayapura</span> </h2>
+                    
+                    <p class="card-text">
+                     uliner lokal Papua menawarkan cita rasa yang unik dan menggambarkan kekayaan alam serta budaya masyarakatnya. Salah satu makanan khas yang terkenal adalah ulat sagu, yang biasanya diambil dari pohon sagu dan dapat dimakan mentah maupun dibakar.
+                    </p>
+                    <a href="#" class="text-decoration-none fw-semibold link-yellow-jpr">Baca Selengkapnya...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col end -->
+        </div>
+        <!-- .row end -->
+
+        <div class="row py-5">
+          <div class="col">
+
+            <nav aria-label="Halaman contoh">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Sebelumnya</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Selanjutnya</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+          
+        </div>
+
+        <!-- .row end -->
+
+      </div>
+    </section>
+    <!-- end section -->
+
+
+    <!-- Infografis Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container" data-aos="fade-up">
+        <div class="row py-5">
+          <div class="col text-center">
+            <h2 class="display-4 fw-bold text-red-jpr">Galeri Program & Kegiatan</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+          </div>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-4 " >
+
+          
+          <div class="col ">
+            <!-- BERITA 2 -->
+            <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 300px;">
+              <div class="row g-0 flex-column flex-md-row">
+                <!-- Gambar kiri -->
+                <div class="col-md-12 ">
+                  <img src="./public/images/Depapre/asli/Festival bahari tahan merah.jpg" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ipsa nobis fugit quibusdam quia officia cum ab error saepe culpa?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item end -->
+
+          <div class="col">
+            <!-- BERITA 2 -->
+            <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 300px;">
+              <div class="row g-0 flex-column flex-md-row">
+                <!-- Gambar kiri -->
+                <div class="col-md-12">
+                  <img src="./public/images/Depapre/asli/busana wanita.jpeg" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ipsa nobis fugit quibusdam quia officia cum ab error saepe culpa?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item end -->
+
+           <div class="col">
+            <!-- BERITA 2 -->
+            <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 300px;">
+              <div class="row g-0 flex-column flex-md-row">
+                <!-- Gambar kiri -->
+                <div class="col-md-12">
+                  <img src="./public/images/Depapre/asli/pantai amai birt ai.webp" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ipsa nobis fugit quibusdam quia officia cum ab error saepe culpa?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item end -->
+
+           <div class="col">
+            <!-- BERITA 2 -->
+            <div class="card mb-3 border-0 shadow-sm overflow-hidden" style="max-width: 300px;">
+              <div class="row g-0 flex-column flex-md-row">
+                <!-- Gambar kiri -->
+                <div class="col-md-12">
+                  <img src="./public/images/Depapre/asli/perahu asli.jpg" class="img-fluid h-100 w-100"
+                    style="object-fit: cover;" alt="Contoh gambar sampul berita">
+                </div>
+
+                <!-- Konten kanan -->
+                <div class="col-md-12 d-flex align-items-center">
+                  <div class="card-body">
+                    <p class="card-text text-center">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ipsa nobis fugit quibusdam quia officia cum ab error saepe culpa?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item end -->
+           
+        </div>
+
+      </div>
+      <!-- item and -->
+
+      <div class="d-grid gap-2 col-8 col-md-4 col-sm-6 mx-auto shadow mt-5 mb-5 text-bg-light rounded-5">
+        <!-- Button lihat lebih banyak-->
+       <a href="#" class=" btn text-yellow-jpr ">  Tampilkan Lebih Banyak</a>
+
+
+      </div>
+      
+    </section><!-- /Testimonials Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about section bg-light-jpr">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row py-5 gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5 position-relative" data-aos="fade-up" data-aos-delay="200">
+          
+            <h2 class="display-3 text-red-jpr fw-bold text-center">Statistik <br><span class=" ">DATA</span></h2>
+            <div class="bg-secondary text-secondary w-25 position-absolute top-50 start-50 translate-middle mt-1 mb-2 opacity-50" style=" height: 3px; "></div>
+            <p class="about-description text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident sequi odit minus animi. Et iste laborum doloremque ullam, optio soluta provident numquam sunt consequatur!</p>
+
+            <div class="info-wrapper">
+              <div class="row gy-4">
+                <div class="col-lg-6">
+                  
+                </div>
+
+                
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+          
+                <img src="public/images/Depapre/banner/grafik.png" alt="Team Discussion"
+                  class="img-fluid small-image rounded-4">
+              
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top ">
+      <div class="row gy-5 row-cols-12">
+        <div class="col-lg-4 col-md-6 col-sm-12 footer-about  ">
+          
+            <img src="./public/images/Depapre/New folder/logo kab jpr.png" alt="Logo Kota Jayapura" style="width: 40%;">
+            
+                    
+          
+        </div>
+
+
+
+        <div class="col-lg-4 col-md-3 footer-links ">
+          <h4 class="fw-bold text-uppercase">Profil Distrik</h4>
+          <ul class="">
+            <li><a href="#">Sejarah Distrik</a></li>
+            <li><a href="#">Visi & Misi</a></li>
+            <li><a href="#">Tupoksi</a></li>
+            <li><a href="#">Struktur Organisasi</a></li>
+            <li><a href="#">Peta Wilaya</a></li>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-3 footer-links">
+          <h4 class="fw-bold text-uppercase">Media Sosial </h4>
+          <ul>
+            <li><a href="#" class="fs-6"><i class="bi bi-instagram text-danger-emphasis fs-6 "></i> Instagram</a></li>
+            <li><a href="#" class="fs-6"><i class="bi bi-tiktok text-dark fs-6"></i> Tiktok</a></li>
+            <li><a href="#" class="fs-6"><i class="bi bi-facebook text-primary fs-6"></i> Facebook</a></li>
+            <li><a href="#" class="fs-6"><i class="bi bi-linkedin text-primary fs-6"></i> LinkedIn</a></li>
+            <li><a href="#" class="fs-6"><i class="bi bi-youtube text-danger fs-6"></i> Youtube</a></li>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Pemerintah Kabupaten Jayapura Distrik Depapre </strong> <span>- All Rights
+          Reserved</span></p>
+      <div class="credits">
+        Dikembangkan oleh <a href="https://nokensoft.com/">Nokensoft.com</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
