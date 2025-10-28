@@ -108,18 +108,10 @@
 
   <style>
     .hero-section {
-      position: relative;
+      position:absolute;
       width: 100%;
       height: 100vh;
-      overflow: hidden;
-
-      /* Pusatkan konten */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-
-      
+         
 
     }
 
@@ -130,7 +122,7 @@
       left: 0;
       bottom: 100px;
       width: 100%;
-      height: 100%;
+      height: 100% ;
       overflow: hidden;
       z-index: 0;
     }
@@ -147,24 +139,25 @@
     /* === Konten di atas video === */
     .hero-content {
       position: relative;
-      z-index: 5;
+      z-index: 2;
       padding: 0 0;
-      margin-top: 20%;
-      margin-left: 10%;
-      margin-right: 10%;
-      margin-bottom: 20%;
+      margin-top: 25%;
+      margin-left: 0%;
+      margin-right: 0%;
+      margin-bottom: 25%;
     
     }
 
     .hero-content h1 {
-      font-size: 4rem;
-      letter-spacing: 3px;
+      
+      
+      letter-spacing: 5px;
     }
 
-    .hero-content p {
-      font-size: 1.25rem;
-      color: #fff;
-    }
+    
+
+    
+    
 
     
 
@@ -180,6 +173,143 @@
       z-index: 1;
     }
 
+/* baru ditambah */
+     
+
+
+/* --- Background Video --- */
+.video-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.video-cover video {
+  width: 100;
+  height: 100;
+  object-fit: cover; /* agar video menyesuaikan frame tanpa distorsi */
+  filter: brightness(65%); /* sedikit gelap agar teks lebih jelas */
+}
+
+/* --- Hero Content --- */
+.hero-content {
+  position: relative;
+  z-index: 2;
+ 
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+
+/* --- Gambar dan teks --- */
+.hero-content img {
+  max-width: 150px;
+  height: auto;
+  margin-right: 50px;
+  transition: transform 0.3s ease;
+  
+}
+
+.hero-content .img {
+  margin-left: 60px;
+  max-width: 300px;
+  height: auto;
+  transition: transform 0.3s ease;
+  
+}
+
+.hero-content img:hover {
+  transform: scale(1.05);
+}
+
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 20px;
+
+}
+
+/* --- Responsif untuk tablet --- */
+@media (max-width: 992px) {
+  .hero-content {
+    
+    margin-top: 40%;
+    flex-wrap: wrap;
+    
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .hero-content img {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+  .hero-content .img {
+    max-width: 190px;
+    margin-left: 20px;
+  }
+
+  .hero-content > .d-flex {
+    gap: 1.5rem;
+    align-items: center;
+    
+  }
+}
+
+/* --- Responsif untuk HP --- */
+@media (max-width: 570px) {
+ 
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .hero-content p {
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .hero-content > .d-flex {
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .hero-content img {
+    max-width: 80px;
+    margin-left: 30px;
+   
+  
+  }
+  .hero-content .img {
+    max-width: 180px;
+    margin-left: 10px;
+    margin-bottom: 40px;
+  }
+}
     
  
   </style>
@@ -207,7 +337,7 @@
           </p>
           <p class="opacity-50">www.depapre.go.id</p>
         </div>
-        <img src="./public/images/Depapre/New folder/ketuawakil.png" alt="walikota" width="500" >
+        <img class="img" src="./public/images/Depapre/New folder/ketuawakil.png" alt="kepala distrik" >
         
         
       </div>
@@ -279,7 +409,7 @@
             </ul>
           </li>
 
-          <li><a href="#kontak">Program & Kegiatan</a></li>
+          <li><a href="#programkegiatan">Program & Kegiatan</a></li>
           <li><a href="#kontak">Transparansi & Laporan</a></li>
           <li><a href="#kontak">Kontak & Layanan Online</a></li>
         </ul>
@@ -319,7 +449,7 @@
 
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="row border-bottom mb-5">
+            <div class="row border-bottom mb-5" id="beritapengumuman">
               <div class="col">
                 <h5 class="display-4 fw-bold text-red-jpr">Pengumuman</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tenetur! Officia quidem molestiae sint
@@ -404,14 +534,14 @@
 
     <!-- Berita Terkini -->
     <section class="bg-light">
-      <div class="container">
-        <div class="row">
+      <div class="container" id="beritapengumuman">
+        <div class="row mb-3">
 
-          <div class="col-xl-2">
-            <h5 class="text-red-jpr display-4"> <span class="fw-bold">Berita</span> Terkini</h5>
+          <div class="col-xl-2 ">
+            <h5 class="text-red-jpr display-4 mt-3"> <span class="fw-bold">Berita</span> Terkini</h5>
             </div>
-          <div class="col-lg-10 d-flex align-items-center">
-            <p class="text-secondary fs-4" style="font-size: 100%;">Temukan beragam berita dan informasi terkini seputar
+          <div class="col-lg-10 d-flex align-items-center mt-3 mb-3">
+            <p class="text-secondary fs-5" style="font-size: 100%;">Temukan beragam berita dan informasi terkini seputar
               kegiatan, kebijakan, serta perkembangan di wilayah Kota Jayapura. Setiap informasi disajikan untuk
               memberikan pemahaman yang lebih luas kepada masyarakat mengenai berbagai program dan inovasi daerah.
               Melalui publikasi ini, diharapkan masyarakat dapat berpartisipasi aktif dalam mendukung pembangunan Kota
@@ -478,7 +608,7 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-12">
-                  <img src="./public/images/Depapre/asli/busana pria.jpg" class="img-fluid h-100 w-100"
+                  <img src="./public/images/Depapre/New folder/menari.png" class="img-fluid  w-100"
                     style="object-fit: cover; height:300px; " alt="Contoh gambar sampul berita">
                 </div>
 
@@ -559,7 +689,7 @@
     <section id="testimonials" class="testimonials section">
 
       <!-- Section Title -->
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" id="programkegiatan">
         <div class="row py-5">
           <div class="col text-center">
             <h2 class="display-4 fw-bold text-red-jpr">Galeri Program & Kegiatan</h2>
@@ -579,15 +709,17 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-12 ">
-                  <img src="./public/images/Depapre/asli/Festival bahari tahan merah.jpg" class="img-fluid h-100 w-100"
+                  <img src="./public/images/Depapre/New folder/terminal depapre.png" class="img-fluid h-100 w-100"
                     style="object-fit: cover;" alt="Contoh gambar sampul berita">
                 </div>
 
                 <!-- Konten kanan -->
                 <div class="col-md-12 d-flex align-items-center">
                   <div class="card-body">
-                    <p class="card-text text-center">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ipsa nobis fugit quibusdam quia officia cum ab error saepe culpa?</p>
+                    
+                    <p class="card-text ">
+                     Keramaian di Depapre saat pagi hari sungguh terasa, apalagi di tempat orang-orang menunggu angkutan umum. Masyarakat di sini terlihat sangat antusias untuk segera pergi ke kota dengan menggunakan berbagai transportasi, mulai dari mobil umum yang biasa disebut "taksi" sampai motor ojek. Mereka sudah siap sejak subuh, berdesakan sedikit sambil membawa tas besar berisi hasil kebun atau dagangan yang akan dijual. Suara mesin mobil dan motor yang meraung, bercampur dengan teriakan sopir yang memanggil penumpang, menciptakan suasana yang riuh dan penuh semangat. Semangat mereka begitu besar karena perjalanan ke kota berarti kesempatan untuk bekerja, bersekolah, atau menjual hasil bumi. Antusiasme ini menunjukkan betapa pentingnya alat transportasi ini sebagai jembatan yang menghubungkan Depapre dengan keramaian kota, membuat pergerakan hidup masyarakat di sini tidak pernah berhenti.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -601,15 +733,16 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-12">
-                  <img src="./public/images/Depapre/asli/busana wanita.jpeg" class="img-fluid h-100 w-100"
+                  <img src="./public/images/Depapre/New folder/pantai yongsu.png" class="img-fluid h-100 w-100"
                     style="object-fit: cover;" alt="Contoh gambar sampul berita">
                 </div>
 
                 <!-- Konten kanan -->
                 <div class="col-md-12 d-flex align-items-center">
                   <div class="card-body">
-                    <p class="card-text text-center">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ipsa nobis fugit quibusdam quia officia cum ab error saepe culpa?</p>
+                    <p class="card-text ">
+                    Pantai Yongsu di Papua itu indah sekali, seperti surga tersembunyi yang nyaman. Kita bisa lihat berbatuan yang rapi ddan air laut biru yang jernih, membuat hati langsung tenang. Yang paling seru, di dekat pantai ini ada pertemuan ajaib antara laut dan sungai, dan air sungainya itu dingin sekali, terasa seperti air es yang langsung bikin badan segar! Rasanya luar biasa saat kita bermain di air sungai yang dingin setelah puas main di pasir pantai. Tempat ini benar-benar pas untuk bersantai, jauh dari bising, dan menikmati alam yang masih asri, seperti sebuah pelukan alam yang menyejukkan.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -623,15 +756,16 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-12">
-                  <img src="./public/images/Depapre/asli/pantai amai birt ai.webp" class="img-fluid h-100 w-100"
+                  <img src="./public/images/Depapre/New folder/anak sekolah.png" class="img-fluid h-100 w-100"
                     style="object-fit: cover;" alt="Contoh gambar sampul berita">
                 </div>
 
                 <!-- Konten kanan -->
                 <div class="col-md-12 d-flex align-items-center">
                   <div class="card-body">
-                    <p class="card-text text-center">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ipsa nobis fugit quibusdam quia officia cum ab error saepe culpa?</p>
+                    <p class="card-text ">
+                      Di ruang kelas 3A SD YPK Yepase, suasana belajar terasa sangat hidup dan penuh semangat.Para siswa/i semua tertuju pada Ibu Guru yang berdiri di depan, seolah tidak mau ketinggalan satu kata pun. Mereka duduk rapi, tapi wajah-wajahnya memancarkan rasa ingin tahu yang besar dan senyum antusias. Saat Ibu Guru bercerita atau menjelaskan pelajaran, mereka langsung angkat tangan dengan semangat untuk menjawab. Kertas dan pensil di meja mereka siap digunakan, menunjukkan betapa mereka sangat senang dan bersemangat menerima ilmu baru dari Ibu Guru. Mereka benar-benar menjadikan belajar sebagai kegiatan yang menyenangkan dan seru.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -645,15 +779,16 @@
               <div class="row g-0 flex-column flex-md-row">
                 <!-- Gambar kiri -->
                 <div class="col-md-12">
-                  <img src="./public/images/Depapre/asli/perahu asli.jpg" class="img-fluid h-100 w-100"
+                  <img src="./public/images/Depapre/New folder/jaring ikan.png" class="img-fluid h-100 w-100"
                     style="object-fit: cover;" alt="Contoh gambar sampul berita">
                 </div>
 
                 <!-- Konten kanan -->
                 <div class="col-md-12 d-flex align-items-center">
                   <div class="card-body">
-                    <p class="card-text text-center">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, ipsa nobis fugit quibusdam quia officia cum ab error saepe culpa?</p>
+                    <p class="card-text">
+                    Masyarakat di Distrik Depapre hidup sangat dekat dengan laut, karena sebagian besar dari mereka mencari nafkah sebagai nelayan atau penjala ikan sejati. Setiap pagi, sebelum matahari muncul, para bapak sudah sibuk menyiapkan perahu kecil mereka dan memperbaiki jaring. Mereka berani menantang ombak demi mencari rezeki dari lautan Pasifik yang luas. Saat mereka pulang di siang hari, perahu-perahu itu sarat dengan berbagai jenis ikan segar yang akan langsung dijual di pasar. Pekerjaan ini adalah urat nadi kehidupan di Depapre, membuat mereka menjadi pahlawan bagi keluarga dan desa, karena berkat hasil tangkapan mereka, dapur tetap mengepul dan ekonomi terus berputar.  
+                    </p>
                   </div>
                 </div>
               </div>
@@ -666,7 +801,7 @@
       </div>
       <!-- item and -->
 
-      <div class="d-grid gap-2 col-8 col-md-3 col-sm-6 mx-auto shadow mt-5 mb-5 text-bg-light rounded-5 p-2">
+      <div class="d-grid gap-2 col-8 col-md-4 col-sm-6 mx-auto shadow mt-5 mb-5 text-bg-light rounded-5 p-2">
         <!-- Button lihat lebih banyak-->
        <a href="#" class=" btn text-yellow-jpr fs-3 ">  Tampilkan Lebih Banyak</a>
 
@@ -687,7 +822,7 @@
           
             <h2 class="display-3 text-red-jpr fw-bold text-center">Statistik <br><span class="border-bottom border-4 mb-5 border-secondary">DATA</span></h2>
             
-            <p class="about-description text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident sequi odit minus animi. Et iste laborum doloremque ullam, optio soluta provident numquam sunt consequatur!</p>
+            <p class="about-description text-center mt-4">Jumlah penduduk Distrik Depapre adalah 5.097 jiwa per tahun 2024, dengan rincian 2.662 laki-laki dan 2.435 perempuan. Data dari Badan Pusat Statistik (BPS) Indonesia mengonfirmasi jumlah ini dalam laporannya tahun 2023, dengan populasi terbanyak adalah laki-laki. </p>
 
             <div class="info-wrapper">
               <div class="row gy-4">
@@ -716,7 +851,7 @@
 
   </main>
 
-  <footer id="footer" class="footer">
+  <footer id="kontak" class="footer">
 
     <div class="container footer-top ">
       <div class="row gy-5 row-cols-12">
