@@ -1,3 +1,3 @@
-Draft desain website Kota Jayapura
-Demo: https://janzenfaidiban.github.io/webkotajayapura2025/
+Draft desain website Distrik Jayapura
+Demo: https://maikelkayame.github.io/web-distrikdepare-2025/
 Copyright &copy; Nokensoft.com
